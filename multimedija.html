@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranica s pozadinom</title>
+    <style>
+        body {
+            background-color: #89CFF0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .equal-height {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="goBack()">Vrati se nazad</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <section>
+        <h2>Slike</h2>
+        <img src="slike/slika1.jpg" width="300" class="equal-height"> 
+        <img src="slike/slika2.jpg" width="300" class="equal-height"> 
+        <img src="slike/slika3.jpg" width="300" class="equal-height"> 
+    </section>
+
+    <section>
+        <h2>Video</h2>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <h2>Video s YouTube-a</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Xlz6c6zPT4g&t=1259s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h2>Zvuk</h2>
+        <audio controls>
+            <source src="zvuk.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+</body>
+</html>
